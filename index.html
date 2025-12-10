@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 취미 소개</title>
+    <style>
+        body{background-color: rgba(215, 207, 230, 0.948);
+        margin: 0;
+    padding: 20px;
+}
+h1,h2{color: blueviolet;}
+.box{background-color: rgb(255, 255, 255);
+padding: 15px;
+margin-bottom: 15px;
+margin-top:25px;
+border:1px solid;color: black;
+border-radius: 8px;}
+ul{padding-left: 20px;}
+button{background-color: rgb(221, 248, 239);
+color: brown;
+border: none;
+padding: 10px 16px;
+font-size: 20px;
+border-radius: 6px;
+cursor: pointer;}
+button:hover{
+    background-color: black;
+}
+.hidden {display: none;
+}
+p{color: rgb(41, 74, 74);}
+    </style>
+</head>
+<body>
+    <h1>나의 취미 소개</h1>
+    <div class="box">
+        <h2>안녕하세요 ❤🤞</h2>
+        <p>저는 박종현입니다. 이 페이지에서 제가 좋아하는 취미들을 간단히 소개해볼게요</p>
+        <button onclick="Togglehobby()"><strong>취미 열기 / 닫기</strong></button>
+    </div>
+    <div class="hidden" id="hobby">
+        <div class="box">
+        <h2>나의 취미 목록</h2>
+        <ul>
+            <li>배드민턴</li>
+            <li>연우보기</li>
+            <li>수영</li>
+        </ul>
+        </div>
+        <div class="box">
+        <h2>취미 자세히 소개하기</h2>
+        <h3>🏸배드민턴</h3>
+        <p>저녁에 배드민턴을 치고 있습니다.</p>
+        <h3>🤦‍♀️연우보기</h3>
+        <p>곧 200일이 된 첫 딸입니다.</p>
+        <h3>🏊‍♀️수영🏊‍♂️</h3>
+        <p>아침에 수영을 하고있습니다. 어푸어푸</p>
+        </div>
+        <div class="box">
+        <h2>나의 작은 목표</h2>
+        <p>💎배드민턴 b조 가기</p>
+        <p>💎연우 안아프게 잘 키우기</p>
+        <p>💎수영 교정 하기</p>
+        </div>
+        <div class="box">
+        <h3>마무리 한마디</h3>
+        <p><strong>"재미있네여🏆"</strong></p>
+        </div>
+    </div>
+    <script>
+        function Togglehobby(){
+            const hobby = document.getElementById("hobby");
+            hobby.classList.toggle("hidden")
+        }
+    </script>
+</body>
+</html>
